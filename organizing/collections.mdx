@@ -1,0 +1,83 @@
+---
+title: "Grouping Records into Collections in ORArchive"
+sidebarTitle: "Collections"
+description: "Create curated collections to group records from any folder or category into a single shareable view — without moving or duplicating the originals."
+---
+
+Collections are curated groups of records that can span multiple folders and categories. Instead of reorganizing your archive every time a new project, client engagement, or audit requires a specific set of documents, you build a collection that references exactly the records you need — leaving everything else untouched in its original location. Collections are ideal for assembling project dossiers, preparing deliverables for a client, or staging a document set for an internal review.
+
+## Creating a Collection
+
+<Steps>
+  <Step title="Navigate to Collections">
+    Click **Collections** in the left sidebar. If this is your first collection, you will see an empty state prompt. If collections already exist, you will see them listed here.
+  </Step>
+  <Step title="Start a new collection">
+    Click **+ New Collection** in the top-right corner of the Collections page.
+  </Step>
+  <Step title="Name and describe it">
+    Enter a **name** for your collection — something specific enough that team members understand its purpose at a glance, such as "Acme Corp — Q2 2024 Deliverables" or "Annual Audit — Finance Records". Optionally add a **description** to explain the collection's scope or intended audience.
+  </Step>
+  <Step title="Create the collection">
+    Click **Create**. The empty collection opens immediately, ready for you to add records.
+  </Step>
+</Steps>
+
+## Adding Records to a Collection
+
+There are two ways to add records, depending on whether you are working with one record or many.
+
+<Tabs>
+  <Tab title="Single Record">
+    Open any record by clicking it in the main list, search results, or within a folder. In the right-hand detail panel, click **Add to Collection**, select the target collection from the dropdown, and click **Add**. The record is linked to the collection instantly.
+  </Tab>
+  <Tab title="Multiple Records">
+    In any record list view, use the **checkboxes** on the left of each row to select multiple records. Once you have selected two or more, the **bulk action toolbar** appears at the bottom of the screen. Click **Add to Collection**, choose the target collection, and click **Add**. All selected records are linked in one operation.
+  </Tab>
+</Tabs>
+
+<Note>
+  Adding a record to a collection does **not** move it from its folder. The record continues to exist in its original folder location and remains subject to all the same permissions. Collections are a view on top of your archive — think of them as curated playlists rather than separate storage buckets.
+</Note>
+
+## Viewing and Managing a Collection
+
+Click any collection name in the sidebar to open it. The collection view shows all linked records in a standard list with the same search bar, filter panel, and sort controls available in the main archive view. You can search within the collection, apply filters, and sort results without affecting the wider archive.
+
+### Removing a Record from a Collection
+
+Open the record from **within the collection view** (this context matters — the Remove option only appears when you are browsing inside the collection). In the right-hand detail panel, click **Remove from Collection**. The record is unlinked from the collection but remains in its original folder completely unaffected.
+
+### Deleting a Collection
+
+Right-click the collection name in the sidebar and select **Delete Collection**, then confirm in the dialog. Deleting a collection removes the collection and all its membership links. The underlying records are **not** deleted — they stay in their folders and retain all their metadata.
+
+<Warning>
+  Deleting a collection cannot be undone. If a collection has been shared with external stakeholders, their shared link will stop working immediately. Make sure you no longer need the collection — or that you have communicated the change — before deleting it.
+</Warning>
+
+## Sharing a Collection
+
+Collections can be shared with people inside or outside your organization, making them a powerful tool for client-facing deliveries and cross-team reviews.
+
+<Steps>
+  <Step title="Open the Share dialog">
+    Navigate to the collection and click the **Share** button in the top-right corner of the collection page.
+  </Step>
+  <Step title="Add recipients">
+    Enter one or more email addresses. Each recipient can be assigned one of the following access levels:
+    - **View** — Can browse records in the collection and download individual files.
+    - **Comment** — Can view, download, and leave comments on records (available on Pro and Enterprise plans).
+  </Step>
+  <Step title="Send the invitation">
+    Click **Send Invite**. Recipients receive an email with a link to the collection. External recipients who do not have an ORArchive account are directed to a secure, read-only portal view without needing to sign up.
+  </Step>
+</Steps>
+
+<Tip>
+  Use collections as shareable **dossiers** when presenting a set of documents to external stakeholders — for example, a due-diligence package for a potential partner or a portfolio of deliverables for a client sign-off. Because the shared link reflects the live collection, you can add or remove records after sending the link and recipients will always see the current state. Learn more about managing external access in the [External Access guide](/sharing/external-access).
+</Tip>
+
+<Info>
+  Collection membership is included in workspace-level audit exports. Each export entry records which collections a record belongs to at the time of export, giving you a full picture of how records were grouped and shared over time.
+</Info>

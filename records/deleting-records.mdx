@@ -1,0 +1,62 @@
+---
+title: "Deleting Records and Managing the Trash Folder"
+sidebarTitle: "Delete Records"
+description: "Move records to Trash, restore them before the 30-day window closes, or permanently delete files you no longer need from your archive."
+---
+
+Deleting a record in ORArchive is a two-stage process designed to protect you from accidental data loss. When you delete a record it first moves to the **Trash** folder, where it stays for 30 days and can be fully restored. Only after you explicitly choose to permanently delete a record — or after the 30-day window expires — is the content removed from ORArchive's storage. Understanding this workflow ensures you never lose important records by mistake.
+
+## Moving a Record to Trash
+
+Sending a record to Trash removes it from your main archive view and any folders it belongs to, but does not delete any of its data. The record, its file, and its full metadata are all preserved in Trash.
+
+<Steps>
+  <Step title="Locate the record you want to delete">
+    Find the record in the main content area using browsing, search, or filtering.
+  </Step>
+  <Step title="Open the record's action menu">
+    Right-click the record, or hover over it and click the **⋯** (more options) icon that appears on the right side of the record row.
+  </Step>
+  <Step title="Select Move to Trash">
+    Click **Move to Trash** from the dropdown menu. The record disappears from your current view immediately and is moved to the Trash folder in the left sidebar.
+  </Step>
+</Steps>
+
+## Restoring a Record from Trash
+
+If you moved a record to Trash by mistake, or decide you need it back, restoring it takes only a few seconds.
+
+Navigate to **Trash** in the left sidebar to open the Trash folder view. Click the record you want to restore to open its detail panel, then click the **Restore** button in the panel header. ORArchive moves the record back to its original folder and category. If the original folder was deleted while the record was in Trash, the record is restored to your workspace's root folder instead.
+
+## Permanently Deleting a Record
+
+<Warning>
+  Permanent deletion is **irreversible**. Once you permanently delete a record, its file, metadata, and version history are removed from ORArchive's storage and cannot be recovered by you or the ORArchive support team. Make absolutely certain you no longer need a record before proceeding.
+</Warning>
+
+To permanently delete a record:
+
+<Steps>
+  <Step title="Open the Trash folder">
+    Click **Trash** in the left sidebar to view all records currently in Trash.
+  </Step>
+  <Step title="Select the record">
+    Click the record you want to permanently remove. You can also select multiple records at once using checkboxes — see the Tip below.
+  </Step>
+  <Step title="Click Delete Permanently">
+    Click the **Delete Permanently** button in the detail panel header, or in the bulk action toolbar if you have multiple records selected.
+  </Step>
+  <Step title="Confirm the deletion">
+    A confirmation dialog appears listing the record(s) you are about to remove. Type **DELETE** in the confirmation field and click **Confirm** to finalize. The record is immediately and permanently removed.
+  </Step>
+</Steps>
+
+## Auto-Deletion Policy
+
+To keep your workspace storage tidy, ORArchive automatically and permanently deletes any record that has been sitting in Trash for **30 days** without being restored. You will receive an email notification 7 days before any records in your Trash are scheduled for auto-deletion, giving you time to restore anything you want to keep.
+
+The auto-deletion timer resets if a record is restored and then moved to Trash again. Workspace administrators can adjust the auto-deletion window (or disable it entirely) under **Settings → Workspace → Trash Policy**.
+
+<Tip>
+  When you need to restore or permanently delete multiple records at once, use bulk selection in the Trash view. A checkbox appears on each record when you hover over it — click to select, then use **Shift+click** to extend the selection to a range. A bulk action toolbar appears at the bottom of the screen with **Restore** and **Delete Permanently** options for your entire selection.
+</Tip>

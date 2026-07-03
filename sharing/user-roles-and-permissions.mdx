@@ -1,0 +1,69 @@
+---
+title: "User Roles and Permissions in Your Workspace"
+sidebarTitle: "Roles & Permissions"
+description: "Understand ORArchive's role-based access control system, what each workspace role can do, and how to invite, reassign, or remove team members."
+---
+
+ORArchive uses a role-based access control (RBAC) system that governs what every person in your workspace can see and do. Roles are assigned at the workspace level, setting a baseline of capabilities for each user. On top of that baseline, individual records and collections carry their own share permissions — giving you fine-grained control over exactly who can access specific content.
+
+## Workspace roles
+
+There are four workspace roles, each designed for a different type of collaborator.
+
+| Role | Who is it for | Key capabilities |
+|---|---|---|
+| **Owner** | The person who created the workspace | Full control, including billing management, workspace deletion, and managing all users and their roles |
+| **Admin** | Trusted managers or team leads | Add and remove members, manage categories and metadata fields, and view all records in the workspace |
+| **Member** | Regular team members | Upload, edit, and share their own records; view any records shared with them by others |
+| **Guest** | External collaborators or clients | View and download records that have been explicitly shared with them; cannot upload or create records |
+
+<Note>
+  A workspace can have only one Owner at a time. If you need to transfer ownership — for example, when a team lead changes — go to **Settings → Workspace** and use the **Transfer Ownership** option. The current Owner must initiate the transfer.
+</Note>
+
+<Tip>
+  The **Guest** role is ideal for clients or stakeholders who only need to review and download finalized deliverables. Guests cannot browse your wider archive or upload new content, keeping your workspace organized and secure.
+</Tip>
+
+## Record-level permissions
+
+Beyond workspace roles, every individual record and collection supports three share-level permissions. These are set each time you share a record with a specific person and apply independently of their workspace role.
+
+| Permission | Can View & Download | Can Edit Metadata | Can Re-share |
+|---|---|---|---|
+| **Viewer** | ✓ | ✗ | ✗ |
+| **Editor** | ✓ | ✓ | ✗ |
+| **Co-owner** | ✓ | ✓ | ✓ |
+
+Record-level permissions always take precedence for the specific content they apply to. For example, a **Guest** workspace role user granted **Editor** access on a single record can edit that record's metadata, even though the Guest role does not allow editing by default.
+
+## Inviting a team member
+
+<Steps>
+  <Step title="Open the Team settings">
+    Go to **Settings → Team** from the left-hand navigation. This page lists everyone currently in your workspace along with their roles.
+  </Step>
+  <Step title="Click Invite Member">
+    Click the **Invite Member** button in the top-right corner of the Team page.
+  </Step>
+  <Step title="Enter the email and choose a role">
+    Type the invitee's email address and select the appropriate workspace role — **Admin**, **Member**, or **Guest** — from the role dropdown. Review the role capabilities above if you are unsure which to assign.
+  </Step>
+  <Step title="Send the invitation">
+    Click **Send Invitation**. ORArchive dispatches an invitation email to the address you provided. If the invitee does not yet have an ORArchive account, the email prompts them to create one before they can join your workspace.
+  </Step>
+</Steps>
+
+## Changing a member's role
+
+To update an existing member's workspace role, go to **Settings → Team**, locate the person in the list, and click the **role badge** displayed next to their name (for example, *Member* or *Admin*). Select the new role from the dropdown. The change takes effect immediately — no re-invitation is required.
+
+## Removing a member
+
+To remove someone from your workspace entirely:
+
+1. Go to **Settings → Team**.
+2. Click the **⋯** menu to the right of the member's name.
+3. Select **Remove from Workspace** and confirm the action.
+
+The removed user immediately loses the ability to log in to your workspace. Their previously uploaded records and collections remain in the workspace and are still accessible to other authorized users — no content is deleted when a member is removed.

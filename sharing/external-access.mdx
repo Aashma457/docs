@@ -1,0 +1,66 @@
+---
+title: "External Access: Shareable Links for Outside Parties"
+sidebarTitle: "External Access"
+description: "Share records securely with clients, auditors, and contractors using shareable links — with optional expiry dates and password protection for sensitive content."
+---
+
+Not everyone who needs to see a document is part of your ORArchive workspace. External access lets you share records and collections with clients, auditors, contractors, or any other outside party using a shareable link — no account required for the recipient. You control how long the link works, whether it requires a password, and you can disable it at any moment.
+
+<Warning>
+  Shareable links bypass workspace role restrictions. Anyone who obtains the link can view the content at the permission level you configured, regardless of whether they have an ORArchive account. Treat these links with the same care as the documents themselves.
+</Warning>
+
+## Creating a shareable link
+
+<Steps>
+  <Step title="Open the record or collection">
+    Click the record or collection you want to share externally. The detail panel or collection view opens on screen.
+  </Step>
+  <Step title="Switch to the Link tab">
+    Click the **Share** button (person+ icon) in the panel header. When the share dialog opens, click the **Link** tab at the top of the dialog to switch from the people-based sharing view to the link-based sharing view.
+  </Step>
+  <Step title="Enable the shareable link">
+    Toggle on **Enable shareable link**. ORArchive instantly generates a unique URL for this record or collection. The URL appears in the field below the toggle.
+  </Step>
+  <Step title="Copy and send the link">
+    Click **Copy link** to copy the URL to your clipboard, then send it to your recipient via email, chat, or any other channel you prefer.
+  </Step>
+</Steps>
+
+<Note>
+  Anyone who has the link can access the record — you do not need to specify an email address or add the recipient to your workspace. For this reason, keep the link confidential and use the expiry and password features below whenever you are sharing sensitive material.
+</Note>
+
+## Setting an expiry date
+
+An expiry date automatically disables the link after a date you choose, without any manual action on your part.
+
+In the **Link** tab of the share dialog, click **Set expiry date**. A calendar picker appears — select the date on which you want the link to stop working. Once that date passes, anyone who clicks the link receives a 404 response and a message informing them that the link has expired. The record itself is unaffected; you can generate a new link at any time.
+
+## Password-protecting a link
+
+For an additional layer of security, you can require recipients to enter a password before they can view the record.
+
+In the **Link** tab, toggle on **Enable password**. Type a password in the field that appears — choose something that is hard to guess but easy to share verbally. When a recipient opens the link, ORArchive prompts them to enter this password before displaying any content. Share the password through a separate, secure channel such as a phone call or an encrypted messaging app, so the link and password are never transmitted together.
+
+<Tip>
+  For maximum security when sharing sensitive or confidential documents, combine both an expiry date and a password. The expiry date limits the window of exposure, while the password ensures only the intended recipient can open the link even if it is forwarded.
+</Tip>
+
+## Disabling a link
+
+You can revoke all external access for a record or collection at any time by toggling off **Enable shareable link** in the Link tab of the share dialog. The link is disabled immediately — anyone who attempts to use the old URL will see an access-denied message.
+
+If you re-enable the link later, ORArchive generates a **new** unique URL. The previous URL remains permanently inactive, so anyone who had the old link cannot regain access automatically.
+
+## Tracking link activity
+
+ORArchive logs every access event for shareable links so you can monitor who is viewing your externally shared content.
+
+Open the record and click the **Activity** tab in the detail panel. Each entry in the log shows:
+
+- The timestamp of the access event
+- The access method (shareable link)
+- The approximate geographic location of the viewer (country level)
+
+Use the activity log to confirm that a client has received and opened a document, or to detect unexpected access patterns that might indicate the link has been shared beyond the intended recipient.

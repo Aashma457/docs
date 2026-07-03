@@ -1,0 +1,92 @@
+---
+title: "Organizing Records with Folders and Categories"
+sidebarTitle: "Folders"
+description: "Learn how to create folders, nest them up to five levels deep, and use workspace-wide categories to classify your records independently of location."
+---
+
+Folders and categories are the two primary structural tools in ORArchive. Together they give you a flexible filing system: folders define where a record lives, while categories describe what a record is — and you can use both at the same time to keep even large archives easy to navigate.
+
+## Folders vs. Categories
+
+Folders and categories solve different organizational problems. Understanding the distinction helps you design a structure that scales as your archive grows.
+
+<CardGroup cols={2}>
+  <Card title="Folders" icon="folder">
+    Hierarchical containers, just like folders on your computer. Every record lives in **exactly one folder** at a time. Use folders to reflect how your team naturally navigates files — by project, client, year, or department.
+  </Card>
+  <Card title="Categories" icon="tag">
+    Workspace-level labels such as "Contracts", "Invoices", or "HR". A record has **exactly one category**, applied regardless of which folder it sits in. Use categories to classify records by type or purpose across the whole workspace.
+  </Card>
+</CardGroup>
+
+| | Folders | Categories |
+|---|---|---|
+| **Scope** | Per-record location | Workspace-wide label |
+| **Hierarchy** | Up to 5 levels deep | Flat list |
+| **Records per container** | Unlimited | Unlimited |
+| **Records per item** | One folder per record | One category per record |
+| **Managed by** | Any member with edit access | Workspace admins only |
+
+## Creating a Folder
+
+<Steps>
+  <Step title="Open the new folder dialog">
+    In the left sidebar, click the **+** icon next to the **Folders** heading. If you don't see the icon, hover over the heading to reveal it.
+  </Step>
+  <Step title="Name your folder">
+    Type the folder name in the input field that appears inline and press **Enter** to confirm. Folder names can be up to 255 characters and support Unicode, so you can include emoji, accented characters, or non-Latin scripts.
+  </Step>
+  <Step title="Start adding records">
+    The new folder appears immediately in the sidebar. Drag and drop records onto it, or open any record's **⋯** menu and choose **Move to Folder** to place it inside.
+  </Step>
+</Steps>
+
+<Tip>
+  Before uploading a large batch of records, sketch out your folder structure on paper or in a spreadsheet. Reorganizing hundreds of records after the fact is possible but time-consuming. A flat structure with fewer than ten top-level folders is usually easier to maintain than deeply nested hierarchies.
+</Tip>
+
+## Nesting Folders
+
+Right-click any existing folder in the sidebar and select **New Subfolder**. Type the subfolder name and press **Enter**. ORArchive supports up to **5 levels of nesting** — the sidebar indents each level visually so you can see the full hierarchy at a glance.
+
+To move an existing folder into another folder, drag it onto the target parent folder. The entire subtree, including all nested subfolders and their records, moves with it.
+
+## Renaming and Deleting Folders
+
+Right-click any folder in the sidebar to access folder management options:
+
+- **Rename** — Type the new name and press **Enter** to save. All records inside the folder retain their existing metadata; only the folder name changes.
+- **Delete** — Removes the folder from the sidebar. Any records that were inside the deleted folder are automatically moved to its **parent folder** (or to the top-level **Unfiled** area if the deleted folder had no parent). Records are **not** sent to Trash.
+
+<Warning>
+  Deleting a folder is permanent and cannot be undone. Make sure you no longer need the folder as an organizational unit before deleting it, because the folder hierarchy itself cannot be restored — only the records survive.
+</Warning>
+
+## Managing Categories
+
+Categories are configured at the workspace level. To create, rename, or delete a category, navigate to [**Settings > Categories**](/settings/profile-settings). Only workspace admins have access to this settings page.
+
+<Accordion title="Creating a new category">
+  1. Go to **Settings > Categories**.
+  2. Click **+ Add Category**.
+  3. Enter a name and choose an optional color for the category label.
+  4. Click **Save**. The category is immediately available in every record's edit panel across the workspace.
+</Accordion>
+
+<Accordion title="Renaming a category">
+  1. Go to **Settings > Categories**.
+  2. Click the **pencil icon** next to the category you want to rename.
+  3. Type the new name and click **Save**. All records tagged with that category automatically reflect the updated name.
+</Accordion>
+
+<Accordion title="Deleting a category">
+  1. Go to **Settings > Categories**.
+  2. Click the **trash icon** next to the category.
+  3. Confirm the deletion in the dialog.
+
+  All records previously assigned to the deleted category are set to **Uncategorized**. They remain in their folders and are otherwise unaffected.
+</Accordion>
+
+<Note>
+  If your workspace has a large number of categories, use the search field at the top of the Settings > Categories page to filter the list by name.
+</Note>

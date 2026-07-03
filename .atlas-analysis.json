@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "ORArchive",
+  "projectDescription": "ORArchive is a web-based archive management platform that helps users store, organize, search, and retrieve records and documents efficiently.",
   "theme": "almond",
-  "name": "ORArchive",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -74,20 +72,15 @@
       }
     ]
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@orachive.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Open ORArchive",
-      "href": "https://app.orachive.com"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Upload and store documents and records in a centralized archive",
+    "Organize files with folders, categories, tags, and metadata",
+    "Powerful search and filtering across all archived content",
+    "User roles and permissions for access control",
+    "Share records with team members or external users",
+    "Bulk import and export of records",
+    "Storage usage tracking and management",
+    "Notifications and activity tracking"
+  ],
+  "publicApiSurface": []
 }

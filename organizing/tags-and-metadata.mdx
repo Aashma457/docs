@@ -1,0 +1,86 @@
+---
+title: "Using Tags and Metadata Fields in ORArchive"
+sidebarTitle: "Tags & Metadata"
+description: "Add tags, define custom metadata fields, and enrich every record so your team can find, filter, and export the right documents without manual searching."
+---
+
+Every record in ORArchive carries a set of metadata — title, description, tags, and any custom fields your workspace admin has defined. Filling in this metadata is one of the highest-value habits you can build: the richer each record's metadata, the faster anyone on your team can find exactly what they need through search and filters, and the more useful bulk exports become when you need to audit or report on your archive.
+
+## Tags
+
+Tags are free-form keywords you attach to records. Unlike categories, which are fixed workspace-level labels, tags are flexible — you can create any tag on the fly without needing admin access. Each record supports multiple tags, and tags are shared across the workspace, so a tag you create on one record is reusable on any other.
+
+### Adding Tags
+
+<Steps>
+  <Step title="Open the record edit panel">
+    Click on any record to select it, then click **Edit** in the right-hand detail panel. The edit panel slides open with all editable fields visible.
+  </Step>
+  <Step title="Type your tag">
+    Click into the **Tags** field and type your keyword. Tag names are case-insensitive and can contain letters, numbers, hyphens, and underscores.
+  </Step>
+  <Step title="Confirm the tag">
+    Press **Enter** or type a **comma** after each tag to add it. The tag appears as a chip in the field. Repeat for as many tags as you need, then click **Save**.
+  </Step>
+</Steps>
+
+### Removing a Tag
+
+Open the record's edit panel, find the tag chip you want to remove, and click the **×** on the chip. Click **Save** to confirm the change.
+
+<Tip>
+  Establish a tagging convention before your team starts uploading in bulk. Consistent patterns like `year-2024`, `client-acme`, or `project-rebrand` make tag-based filtering far more powerful than a mix of ad-hoc labels. Document your convention in a shared note or pinned collection so all team members follow the same format.
+</Tip>
+
+## Custom Metadata Fields
+
+Beyond built-in fields like title and description, workspace admins can define **custom metadata fields** tailored to your organization's needs. Custom fields can be any of the following types:
+
+| Field Type | Use Case Example |
+|---|---|
+| **Text** | Contract reference number, client name |
+| **Date** | Expiry date, effective date, review date |
+| **Number** | Contract value, invoice amount, version number |
+| **Dropdown** | Status (Draft / Approved / Archived), region |
+
+### Creating Custom Fields
+
+Workspace admins can add new fields by navigating to **Settings > Metadata Fields**, clicking **+ Add Field**, choosing a field type, entering a name and optional default value, and clicking **Save**. Once saved, the field appears in the edit panel of **every record** in the workspace immediately.
+
+Common examples of useful custom fields include:
+
+- **Contract Value** — Number field for storing monetary amounts
+- **Expiry Date** — Date field for triggering review reminders
+- **Project Code** — Text field for linking records to external project trackers
+
+<Note>
+  Custom metadata fields are fully searchable and filterable, just like built-in fields. After defining a field, your team can filter the record list by that field's value directly from the filter panel, or include it as a condition in a saved search.
+</Note>
+
+### Editing Custom Field Values on a Record
+
+Once custom fields exist in your workspace, any team member with edit access to a record can fill in their values. Open the record, click **Edit** in the right-hand panel, scroll to the custom fields section below the built-in fields, enter or select the appropriate values, and click **Save**.
+
+## Viewing and Editing Metadata
+
+Open any record by clicking it in the main list or search results. The **right-hand panel** displays all of the record's current metadata in read-only mode, including:
+
+- Title and description
+- Category and folder location
+- Tags
+- File type, size, and upload date
+- All custom metadata field values
+
+Click **Edit** to switch the panel to edit mode, where you can modify any of these fields. Click **Save** when you are done, or **Cancel** to discard your changes.
+
+### Metadata Change History
+
+Switch to the **Activity** tab within the record panel to see a full audit log of every metadata change made to that record. Each entry shows the field that changed, the old and new values, the timestamp, and the name of the team member who made the change. This log is read-only and cannot be altered.
+
+<Accordion title="Can I edit the Activity log?">
+  No. The Activity log is an immutable audit trail maintained by ORArchive. It captures every metadata edit, upload, move, and permission change. If you need to export this log for compliance purposes, open the record, go to the Activity tab, and click **Export Log** to download a CSV of the full history.
+</Accordion>
+
+<Info>
+  Metadata is included in bulk exports. When you export a set of records as a ZIP archive, ORArchive generates a **CSV manifest** alongside the files containing every field value — including all custom metadata — for each exported record. This makes it straightforward to import your archive index into a spreadsheet or external system.
+</Info>

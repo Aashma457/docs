@@ -1,0 +1,193 @@
+---
+title: "Troubleshooting Common ORArchive Issues"
+sidebarTitle: "Common Issues"
+description: "Step-by-step fixes for the most frequent problems users encounter in ORArchive, from failed uploads to missing emails and broken shared links."
+---
+
+Even well-designed tools occasionally behave unexpectedly. This page walks you through the most common issues ORArchive users run into and the fastest way to resolve each one. Work through the steps in order — most problems are resolved within the first one or two actions.
+
+<Accordion title="Upload fails or gets stuck">
+  If a file upload stops partway through, shows an error, or the progress bar freezes, one of the following is usually the cause:
+
+  **Check these first:**
+  - **File size:** Compare your file size against your plan's limit (512 MB on Free, 2 GB on Starter, 5 GB on Professional and Enterprise). Files over the limit are rejected immediately.
+  - **File format:** Confirm the format is supported. Unsupported file types trigger an error at the point of upload. See [Uploading Files](/records/uploading-files) for the full list.
+
+  **If the size and format are fine:**
+
+  <Steps>
+    <Step title="Check your internet connection">
+      Run a quick speed test or try loading another site. Unstable connections interrupt multi-part uploads. Reconnect and retry.
+    </Step>
+    <Step title="Try a different browser">
+      Switch to a supported browser such as Chrome, Firefox, Edge, or Safari (latest versions). Outdated browsers can cause upload failures.
+    </Step>
+    <Step title="Disable browser extensions">
+      Some ad blockers and privacy extensions interfere with file upload requests. Temporarily disable all extensions and retry the upload.
+    </Step>
+    <Step title="Disable your VPN">
+      VPN routing can cause timeouts on large uploads. Temporarily disconnect your VPN, retry the upload, then reconnect once it completes.
+    </Step>
+    <Step title="Contact support if the issue persists">
+      Note the exact error message and the file's name and size, then [contact the support team](/support/contact-support). Include those details to speed up diagnosis.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Verification email not received">
+  If you registered but never received the email asking you to verify your address, follow these steps before assuming there is a platform issue:
+
+  <Steps>
+    <Step title="Check your spam or junk folder">
+      Verification emails occasionally land in spam. Search your inbox for **noreply@orachive.com**.
+    </Step>
+    <Step title="Wait up to 5 minutes">
+      Email delivery can be delayed by a few minutes depending on your mail provider. Refresh your inbox and wait before taking further action.
+    </Step>
+    <Step title="Resend the verification email">
+      On the sign-in page, click **Resend Verification Email**. A fresh link will be sent within seconds.
+    </Step>
+    <Step title="Check with your IT administrator">
+      If your organisation uses a managed email domain, your IT team may have rules blocking external senders. Ask them to allowlist **orachive.com** and retry.
+    </Step>
+  </Steps>
+
+  <Note>
+    Verification links expire after 24 hours. If yours has expired, use the **Resend Verification Email** option to get a new one.
+  </Note>
+</Accordion>
+
+<Accordion title="Cannot log in — password not working">
+  If your password is rejected at the login screen, the quickest fix is a password reset:
+
+  <Steps>
+    <Step title="Request a password reset link">
+      On the login page, click **Forgot Password** and enter the email address associated with your account. A reset link will be sent immediately.
+    </Step>
+    <Step title="Check your inbox (and spam)">
+      The reset email comes from **noreply@orachive.com**. Check your spam folder if it does not appear within a few minutes.
+    </Step>
+    <Step title="Use the link within 1 hour">
+      Password reset links expire after **1 hour** for security reasons. If yours has expired, repeat the process to get a new one.
+    </Step>
+    <Step title="Set a new password">
+      Follow the link to create a new password. Use at least 12 characters with a mix of letters, numbers, and symbols.
+    </Step>
+  </Steps>
+
+  <Tip>
+    If you use single sign-on (SSO) through your organisation, you cannot reset your password through ORArchive directly. Contact your identity provider or IT administrator instead.
+  </Tip>
+</Accordion>
+
+<Accordion title="Record shows as 'Processing'">
+  After upload, records go through a **processing step** where ORArchive generates previews, extracts searchable text, and (for scanned PDFs) runs OCR. This is normal behaviour and not an error.
+
+  - **Most files** complete processing within **1–3 minutes**.
+  - **Large files and video files** may take up to **15–20 minutes** depending on size and server load.
+
+  **If a record has been stuck on "Processing" for more than 30 minutes:**
+
+  <Steps>
+    <Step title="Refresh the page">
+      Press **F5** (or **Cmd + R** on Mac) to reload. The status sometimes fails to update automatically.
+    </Step>
+    <Step title="Wait a further 10 minutes">
+      Occasionally the processing queue is busy. Give it a bit more time before escalating.
+    </Step>
+    <Step title="Contact support">
+      If the record is still stuck after 40 minutes total, [contact support](/support/contact-support) with the record ID (visible in the URL when the record is open) and the file's name and format.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Search returns no results">
+  If a search for a record you know exists returns nothing, work through these checks:
+
+  <Steps>
+    <Step title="Confirm you are in the right workspace">
+      Check the workspace name in the top-left of the sidebar. Records from one workspace are not visible when searching from another.
+    </Step>
+    <Step title="Use broader search terms">
+      Try a shorter keyword or just part of the filename. ORArchive searches titles, tags, and extracted text — an exact phrase may not match if the file was scanned or the text differs slightly.
+    </Step>
+    <Step title="Review your active filters">
+      Open the **Filters** panel and check whether date, file type, or tag filters are narrowing the results too aggressively. Clear all filters and search again.
+    </Step>
+    <Step title="Wait for OCR to finish">
+      Text inside scanned PDFs is only searchable after OCR processing completes. If you uploaded the document recently, wait a few minutes and search again.
+    </Step>
+  </Steps>
+
+  <Info>
+    OCR is available on all plans. It runs automatically on scanned PDFs and image files. Handwritten content may not be fully recognised.
+  </Info>
+</Accordion>
+
+<Accordion title="Shareable link not working for recipient">
+  If someone reports that a link you shared is not working for them, check the following:
+
+  <Steps>
+    <Step title="Verify the link is still enabled">
+      Open the record → **Share** → **Link** tab. Confirm the shareable link toggle is still switched on.
+    </Step>
+    <Step title="Check the expiry date">
+      If you set an expiry date when creating the link, confirm it has not passed. If it has, generate a new link and share it again.
+    </Step>
+    <Step title="Confirm the password">
+      If you set a link password, make sure the recipient has the correct password. Passwords are case-sensitive.
+    </Step>
+    <Step title="Ask them to try an incognito window">
+      Cached sessions or browser extensions can block link access. Ask the recipient to open the link in a private/incognito browser window.
+    </Step>
+    <Step title="Regenerate the link">
+      If none of the above helps, disable the existing link and create a new one. Share the fresh URL with the recipient.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Invited team member not receiving invite email">
+  If a colleague says they never received an invitation to your workspace, try the following:
+
+  <Steps>
+    <Step title="Ask them to check spam">
+      Invite emails come from **noreply@orachive.com** and occasionally land in spam or junk folders.
+    </Step>
+    <Step title="Verify the email address">
+      Go to **Settings > Team** and confirm the email address listed for the pending invite is spelled correctly. A single typo means the email went to the wrong address.
+    </Step>
+    <Step title="Resend the invitation">
+      In **Settings > Team**, click **⋯** next to the pending member and select **Resend Invitation**. A fresh invite email will be dispatched immediately.
+    </Step>
+    <Step title="Check corporate email filtering">
+      If your colleague uses a managed corporate email address, their IT team may be filtering out the invite. Ask them to add **orachive.com** to their allowlist and then resend the invitation.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Folder structure not saving or disappearing">
+  If folders you create do not appear after you refresh the page, or vanish shortly after creation, the issue is almost always connectivity-related:
+
+  <Steps>
+    <Step title="Check your internet connection">
+      Folder creation requires a live network round-trip to save the new folder to ORArchive's servers. If your connection drops during that window, the folder is not saved.
+    </Step>
+    <Step title="Wait for the confirmation">
+      After typing a folder name and pressing Enter, look for the folder to appear in the sidebar with its icon. If you navigate away before it renders, the operation may not have completed.
+    </Step>
+    <Step title="Hard refresh the page">
+      Press **Ctrl + Shift + R** (Windows/Linux) or **Cmd + Shift + R** (Mac) to force a full reload, then recreate the folder.
+    </Step>
+    <Step title="Try a different browser">
+      If the problem repeats across sessions, try a different browser to rule out a local caching issue.
+    </Step>
+  </Steps>
+
+  <Warning>
+    Avoid creating multiple folders in rapid succession on a slow connection — wait for each folder to appear in the sidebar before creating the next one.
+  </Warning>
+</Accordion>
+
+<Tip>
+  Before contacting support, gather two pieces of information: the **exact error message** (screenshot it if possible) and the **record ID** of any affected record (visible in the URL bar when the record is open, e.g. `...orachive.com/records/abc123`). Providing these upfront significantly speeds up diagnosis.
+</Tip>
