@@ -37,10 +37,6 @@
               "sharing/user-roles-and-permissions",
               "sharing/external-access"
             ]
-          },
-          {
-            "group": "Account & Settings",
-            "pages": []
           }
         ]
       }
