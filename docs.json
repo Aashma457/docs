@@ -27,7 +27,6 @@
             "pages": [
               "organizing/folders-and-categories",
               "organizing/tags-and-metadata",
-              "organizing/searching-and-filtering",
               "organizing/collections"
             ]
           },
@@ -41,24 +40,7 @@
           },
           {
             "group": "Account & Settings",
-            "pages": [
-              "settings/profile-settings",
-              "settings/notifications",
-              "settings/storage-and-usage"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Help & Support",
-        "groups": [
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "support/faq",
-              "support/common-issues",
-              "support/contact-support"
-            ]
+            "pages": []
           }
         ]
       }
