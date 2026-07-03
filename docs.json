@@ -23,16 +23,6 @@
             ]
           },
           {
-            "group": "Managing Records",
-            "pages": [
-              "records/uploading-files",
-              "records/creating-records",
-              "records/editing-records",
-              "records/deleting-records",
-              "records/bulk-operations"
-            ]
-          },
-          {
             "group": "Organizing & Finding",
             "pages": [
               "organizing/folders-and-categories",
